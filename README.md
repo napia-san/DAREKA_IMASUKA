@@ -1,5 +1,5 @@
 # DAREKA_IMASUKA
-Bluetoothの電波から在室状況を把握するシステム(バックエンド)です．<br>
+Bluetoothの電波から在室状況を把握するシステムです．<br>
 Make it possible to know who is in the room from the Bluetooth signal<br>
 ＊使用によって被った損害に対して一切の責任を負いません．
 
