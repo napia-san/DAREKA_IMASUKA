@@ -12,7 +12,7 @@ class DBHelper:
         self.db_password = "hoge"
         self.db_name = "hoge"
         
-        # SSH接続情報
+        # SSH/MySQL接続情報
         self.ssh_host = 'hoge.hoge.jp'
         self.ssh_port = 00000
         self.ssh_user = 'hoge'
