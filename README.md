@@ -5,7 +5,8 @@ This system makes it possible to know who is in the room from the Bluetooth sign
 
 ## Description
 ### 📶 DAREKA_IMASUKA.py
-部屋に入ると自動的に存在を記録します．<br>
+Raspberry pi上で動作を確認しています．<br>
+部屋に入ると自動的に人の存在を記録します．<br>
 Raspberry piの通信範囲内に登録した端末が入ると，`在室`と判定し，データベースへ反映します．<br>
 データベースに登録された端末にPingを打ち，返ってくるかで判定を行います．<br>
 
