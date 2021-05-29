@@ -24,9 +24,16 @@ IDは`AUTO_INCREMENT`を設定するなどして，1~の連番にする必要が
 ネットにつながったRaspberry pi × 部屋数
 
 以下のライブラリを使用しています．(Python)
+* paramiko（sshtunnelの使用に必要）
 * sshtunnel
 * pymysql
 * subprocess
+
+テスト中にsshtunnelがないことにされることがありました．以下をターミナルで実行し，sshtunnelを再度インストールすると解消するかもしれません．
+```
+update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
+```
 
 また，定期的に在室状況を得るために`cron`等を使用します．
 
@@ -35,7 +42,9 @@ IDは`AUTO_INCREMENT`を設定するなどして，1~の連番にする必要が
 定期的に実行すれば，定期的に情報を収集します．<br>
 cronの設定例<br>
 `$ cron -e`でエディタに入り，以下のような記述をすれば，7~23時の間に2分間隔で実行されます．<br>
-実行頻度を上げすぎると，一部の端末から`refuse`が返ってくることがあります．このときは`不在`として判定されます．
+実行頻度を上げすぎると，一部の端末から`refuse`が返ってくることがあります．このときは`不在`として判定されます．<br>
+cronが走っているかは`chkconfig cron`で確認できます．<br>
+走っていなければ，`systemctl enable cron`で起動できます．
 ```
 */2 7-23 * * * python3 /hoge/DAREKA_IMASUKA.py
 ```
