@@ -29,7 +29,8 @@ IDは`AUTO_INCREMENT`を設定するなどして，1~の連番にする必要が
 * pymysql
 * subprocess
 
-テスト中にsshtunnelが存在しないことにされることがありました．以下をターミナルで実行し，sshtunnelを再度インストールすると解消するかもしれません．
+sshtunnelをインストールしたのにもかかわらず，それが存在しないことにされることがありました．<br>
+以下をターミナルで実行し，sshtunnelを再度インストールすると解消するかもしれません．
 ```
 update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
 update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
