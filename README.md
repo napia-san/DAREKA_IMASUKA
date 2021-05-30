@@ -33,8 +33,8 @@ IDは`AUTO_INCREMENT`を設定するなどして，1~の連番にする必要が
 sshtunnelをインストールしたうえで実行しても，「sshtunnelが存在しない」とエラーが返ってくることがありました．<br>
 以下をターミナルで実行し，sshtunnelを再度インストールすると解消するかもしれません．
 ```
-update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
-update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
+$ update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+$ update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
 ```
 
 また，定期的に在室状況を得るために`cron`等を使用します．
