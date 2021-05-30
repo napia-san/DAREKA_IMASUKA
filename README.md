@@ -48,5 +48,5 @@ cronの設定例<br>
 */2 7-23 * * * python3 /hoge/DAREKA_IMASUKA.py
 ```
 実行頻度を上げすぎると，一部の端末から`refuse`が返ってくることがあります．このときは`不在`として判定されます．<br>
-cronが走っているかは`chkconfig cron`で確認できます．<br>
-走っていなければ，`systemctl enable cron`で起動できます．
+cronが走っているかは`$ chkconfig cron`で確認できます．<br>
+走っていなければ，`$ systemctl enable cron`で起動できます．
