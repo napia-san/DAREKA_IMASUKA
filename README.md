@@ -1,5 +1,4 @@
-# DAREKA_IMASUKA
-[English version](https://github.com/napia-san/DAREKA_IMASUKA/blob/main/README_EN.md) is here!<br>
+# DAREKA_IMASUKA  [English version](https://github.com/napia-san/DAREKA_IMASUKA/blob/main/README_EN.md) is here!
 Bluetoothの電波から在室状況を把握できます．<br>
 This system makes it possible to know who is in the room from the Bluetooth signal<br>
 ＊使用によって被った損害に対して一切の責任を負いません．
