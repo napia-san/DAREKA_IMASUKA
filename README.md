@@ -7,10 +7,10 @@ This system makes it possible to know who is in the room by the Bluetooth signal
 ## Description
 ### 📶 DAREKA_IMASUKA.py
 Raspberry pi上で動作を確認しています．<br>
-部屋に入ると自動的に人の存在を記録します．<br>
-Raspberry piの通信範囲内に登録した端末が入ると，`在室`と判定し，データベースへ反映します．<br>
-データベースに登録された端末にPingを打ち，返ってくるかで判定を行います．<br>
+一定の時間間隔で人の存在を検出することができます．<br>
 
+Raspberry Piから事前に登録された端末に送信したPingに対する応答の有無によって在室判定を行います．<br>
+端末の登録情報や在室状況はデータベース上に保存されます．<br>
 テーブル例です．ID，BluetoothのMACアドレス，在室状況を記録するカラムは動作に必要です．<br>
 IDは`AUTO_INCREMENT`を設定するなどして，1~の連番にする必要があります．
 ###### ＊ROOM_Xは各部屋の在室状況を示します．
