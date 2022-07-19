@@ -5,7 +5,6 @@ This system makes it possible to know who is in the room by the Bluetooth signal
 
 ## Description
 ### 📶 DAREKA_IMASUKA.py
-Raspberry pi上で動作を確認しています．<br>
 一定時間間隔で人の存在を検出することができます．<br>
 
 Raspberry Piから事前に登録された端末に送信したPingに対する応答の有無によって在室判定を行います．<br>
