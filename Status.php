@@ -3,7 +3,7 @@
 $dsn = 'mysql:hoge;host=hoge.hoge.jp;charset=utf8';
 $user = 'hoge';
 $password = 'hohoge';
- try {
+try {
     $dbh = new PDO($dsn, $user, $password);
     $sql = 'SELECT NAME,ROOM_X,ROOM_Y,ROOM_Z FROM CurrentStatus';
 	$statement = $dbh -> query($sql);
@@ -22,9 +22,9 @@ $password = 'hohoge';
 	print('Error:'.$e->getMessage());
 	die();
 }
- 
+
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
